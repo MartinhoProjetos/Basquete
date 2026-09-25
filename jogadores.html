@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basquete - Jogadores</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Grandes Jogadores do Basquete</h1>
+
+    <nav>
+        <a href="inicio.html">Início</a> |
+        <a href="historia.html">História</a> |
+        <a href="regras.html">Regras</a> |
+        <a href="jogadores.html">Jogadores</a>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Jogadores importantes</h2>
+
+        <article>
+            <h3>Michael Jordan</h3>
+
+            <p>
+                Michael Jordan é considerado um dos jogadores mais conhecidos
+                da história do basquete. Ele atuou principalmente pelo Chicago Bulls
+                e conquistou seis títulos da NBA durante sua carreira.
+            </p>
+
+            <details>
+                <summary>Mais informações sobre Michael Jordan</summary>
+
+                <p>
+                    Jordan também conquistou cinco prêmios de MVP da temporada regular
+                    e foi escolhido para participar do All-Star Game diversas vezes.
+                </p>
+            </details>
+        </article>
+
+        <article>
+            <h3>LeBron James</h3>
+
+            <p>
+                LeBron James construiu uma longa carreira na NBA e ficou conhecido
+                por sua habilidade em pontuar, passar a bola e participar da organização
+                das jogadas da equipe.
+            </p>
+
+            <details>
+                <summary>Mais informações sobre LeBron James</summary>
+
+                <p>
+                    LeBron conquistou quatro títulos da NBA e também ganhou
+                    quatro prêmios de MVP da temporada regular.
+                </p>
+            </details>
+        </article>
+
+        <article>
+            <h3>Stephen Curry</h3>
+
+            <p>
+                Stephen Curry é conhecido principalmente por seus arremessos
+                de longa distância e por sua influência no estilo moderno
+                de basquete.
+            </p>
+
+            <details>
+                <summary>Mais informações sobre Stephen Curry</summary>
+
+                <p>
+                    Curry conquistou títulos da NBA com o Golden State Warriors
+                    e é reconhecido por seus arremessos de três pontos.
+                </p>
+            </details>
+        </article>
+
+        <article>
+            <h3>Kobe Bryant</h3>
+
+            <p>
+                Kobe Bryant foi um dos grandes jogadores de sua geração.
+                Ele passou toda a sua carreira na NBA jogando pelo Los Angeles Lakers
+                e conquistou cinco títulos da liga.
+            </p>
+
+            <details>
+                <summary>Mais informações sobre Kobe Bryant</summary>
+
+                <p>
+                    Kobe também foi escolhido para o All-Star Game diversas vezes
+                    e recebeu o prêmio de MVP da temporada de 2008.
+                </p>
+            </details>
+        </article>
+    </section>
+
+    <section>
+        <h2>Características de um jogador</h2>
+
+        <figure>
+            <img src="imagem/jogadorbasquete.jpg"
+                 alt="Jogador de basquete">
+
+            <figcaption>
+                Jogador praticando basquete.
+            </figcaption>
+        </figure>
+
+        <p>
+            Um grande jogador precisa desenvolver fundamentos como
+            drible, passe, arremesso, defesa, velocidade e tomada de decisão.
+        </p>
+    </section>
+
+    <section>
+        <h2>Qual jogador você prefere?</h2>
+
+        <form>
+
+            <p>
+                <label for="nome">
+                    Seu nome:
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required>
+            </p>
+
+            <p>
+                <label for="data">
+                    Data:
+                </label>
+
+                <input
+                    type="date"
+                    id="data"
+                    name="data"
+                    required>
+            </p>
+
+            <p>
+                <label for="jogador">
+                    Escolha um jogador:
+                </label>
+
+                <input
+                    list="lista-jogadores"
+                    id="jogador"
+                    name="jogador"
+                    placeholder="Digite ou escolha um jogador"
+                    required>
+
+                <datalist id="lista-jogadores">
+                    <option value="Michael Jordan">
+                    <option value="LeBron James">
+                    <option value="Stephen Curry">
+                    <option value="Kobe Bryant">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="nivel">
+                    Quanto você gosta desse jogador?
+                </label>
+
+                <input
+                    type="range"
+                    id="nivel"
+                    name="nivel"
+                    min="0"
+                    max="10"
+                    value="5">
+            </p>
+
+            <p>
+                <label for="arquivo">
+                    Envie um arquivo:
+                </label>
+
+                <input
+                    type="file"
+                    id="arquivo"
+                    name="arquivo">
+            </p>
+
+            <p>
+                <label for="posicao">
+                    Posição preferida:
+                </label>
+
+                <select
+                    id="posicao"
+                    name="posicao"
+                    required>
+
+                    <option value="">Selecione</option>
+                    <option value="armador">Armador</option>
+                    <option value="ala-armador">Ala-armador</option>
+                    <option value="ala">Ala</option>
+                    <option value="ala-pivo">Ala-pivô</option>
+                    <option value="pivo">Pivô</option>
+
+                </select>
+            </p>
+
+            <p>
+                <label for="opiniao">
+                    Por que você escolheu esse jogador?
+                </label>
+            </p>
+
+            <p>
+                <textarea
+                    id="opiniao"
+                    name="opiniao"
+                    rows="5"
+                    cols="40"
+                    placeholder="Digite sua opinião..."
+                    required></textarea>
+            </p>
+
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+    </section>
+
+    <aside>
+        <h2>Curiosidade</h2>
+
+        <p>
+            Muitos jogadores começam a praticar basquete ainda jovens
+            e passam anos desenvolvendo seus fundamentos antes de chegar
+            ao nível profissional.
+        </p>
+    </aside>
+
+</main>
+
+<footer>
+    <p>Atividade sobre basquete.</p>
+</footer>
+
+</body>
+</html>
